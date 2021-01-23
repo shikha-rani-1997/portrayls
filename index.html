@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body{
+          background-image:url("newpattern2.jpg");
+          background-attachment: fixed;
+          background-size:cover;
+
+          height:100%;
+        }
+        .bborder{
+          position:relative;
+          background-color:rgba(219, 219, 219, 0.96);
+          padding:10px 10px;
+          width:90%;
+          margin:70px;
+          height:4000px;
+          background-size:cover;
+          background-repeat: repeat;
+          overflow: scroll;
+          border:10px solid;
+    
+          
+         }
+        .headi,h1,h2,h3,h4{
+         font-family:'Kristi', cursive;
+         font-style:italic;
+         color:rgb(31, 26, 13);
+         width:80%;
+         text-align:center;
+         padding:40px;
+         margin-left:90px;
+         font-size:80px;
+       
+          
+       }
+       .heroimage {
+  background-image: url("deer.jpeg");
+  height:260px;
+  margin: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 70px;
+  display:block;
+}
+.overlay { 
+ margin-top:190px; 
+ background: rgba(22, 15, 15, 0.8); /* Black see-through */
+  width: 95%;
+  transition: .5s ease;
+  opacity:0;
+  font-family: 'Dancing Script', cursive;
+  color:rgb(252, 248, 240);
+  font-size: 20px;
+  padding: 20px 50px;
+  text-align: center;
+ 
+}
+
+.heroimage:hover .overlay {
+  opacity: 1;
+  
+}
+
+.mynav{
+  position: absolute;
+width:100%;
+background-color: rgba(31, 26, 16, 0.808);
+padding: 15px 15px;
+
+}
+.fil{
+ overflow: hidden;
+ text-align: center;
+ padding: 10px;
+ 
+}
+.fil a {
+  font-family: 'Dancing Script', cursive;
+  font-style:italic;
+  color: #f2f2f2;
+  transition: 0.5s;
+  padding: 50px 64px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.fil a:hover {
+  background-color: rgb(44, 36, 21);
+  opacity: 0.7;
+}
+.container-fluid {
+  position: absolute;
+    margin: 0;
+    padding:40px 50px;
+  }
+  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.row{
+  padding: 40px;
+}
+.thumbnail{
+  background-color: #080808;
+  color: white;
+  width:80%;
+  height:40%;
+  padding: 30px 20px;
+}
+
+#imgid{
+  display:block;
+  width: 80%;
+  height: 80%;
+}
+
+
+.container {
+  position: absolute;
+  display: none;
+  background-color: #080808ce;
+  z-index: 1;
+  padding-top: 700px ;
+  overflow: auto; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 98%; /* Full width */
+  height: 100%;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  left:80px;
+  color:white;
+  font-size: 85px;
+  cursor: pointer;
+}
+
+    </style>
+    
+</head>
+<body style="height: 1500px;">
+    <div class=" bborder">
+    <div class ="headi">PORTRAYAL</div>
+      <div class="mynav">
+      <div class="fil">
+        <a href="newhome.html">Home</a>
+        <a href="index.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="newabout.html">About</a>
+      </div>
+  </div>
+</br >
+</br>
+
+    <div class="heroimage"><div class="overlay"><p>Hii! I'm Rupa, Welcome to my blog</p></div></div>
+    <br/>
+    <div class="container-fluid text-center">
+      <h2>Portrayals</h2><br>
+      <h4>What I have portrayed</h4>
+       
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:60%">
+      </div>
+
+
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="60.jpg" alt="Paris" width="400" height="300" onclick="myfunction(this);" >
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="20.jpg" alt="New York" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>New York</strong></p>
+            <p>We built New York</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="30.jpg" alt="San Francisco" width="400" height="300" onclick="myfunction(this);">
+            <p><strong> San Francisco </strong></p>
+            <p>Yes, San Fran is ours</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="40.jpg" alt="Paris" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="50.jpg" alt="New York" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>New York</strong></p>
+            <p>We built New York</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="90.jpg" alt="San Francisco" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>San Francisco</strong></p>
+            <p>Yes, San Fran is ours</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="70.jpg" alt="Paris" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="10.jpg" alt="New York" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>New York</strong></p>
+            <p>We built New York</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="22.jpg" alt="San Francisco" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>San Francisco</strong></p>
+            <p>Yes, San Fran is ours</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="33.jpg" alt="Paris" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="44.jpg" alt="New York" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>New York</strong></p>
+            <p>We built New York</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="55.jpg" alt="San Francisco" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>San Francisco</strong></p>
+            <p>Yes, San Fran is ours</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="90.jpg" alt="Paris" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="90.jpg" alt="New York" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>New York</strong></p>
+            <p>We built New York</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="mymodal" class="thumbnail">
+            <img id="imgid"src="90.jpg" alt="San Francisco" width="400" height="300" onclick="myfunction(this);">
+            <p><strong>San Francisco</strong></p>
+            <p>Yes, San Fran is ours</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    
+     
+   
+    
+    </div>
+    <script>
+      function myfunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+      
+</body>
+</html>
